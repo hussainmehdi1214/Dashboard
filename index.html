@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+    /* Page Center Fix */
+    body {
+        background-color: rgb(0, 43, 43);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .container{
+        display: flex;
+        max-width: 1600px; /* limit width so it stays centered */
+        width: 100%;
+    }
+
+    .box{
+        width: 250px;
+        height: 100%;
+        background-color: rgb(1, 1, 43);
+    }
+
+    h1{
+        color: white;
+        font-size: 25px;
+        padding: 20px;
+    }
+    h1::first-letter{
+        color: rgb(236, 253, 0);
+        font-size: 60px;
+        text-shadow: 5px 5px 10px rgb(9, 101, 124);
+    }
+
+    p{
+        color: white;
+        font-size: 25px;
+        margin: 15px 20px;
+        cursor: pointer;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pictures :hover{
+        width: 120px;
+    }
+
+    h2{
+        color: white;
+        font-size: 30px;
+        padding-left: 30px;
+        margin-top: 30px;
+    }
+
+    .box2 {
+        width: 350px;
+        height: 100px;
+        background-color:rgb(17, 116, 116);
+        margin: 30px 30px;
+        border-radius: 10px;
+        border: 1px solid #0000ff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .detail{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    h3{
+        color: white;
+        font-size: 25px;
+    }
+
+    .main-content {
+        padding-top: 10px;
+        width: 100%;
+        max-width: 1350px; /* content fixed max width */
+    }
+
+    button{
+        background-color: #2828ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    .dell{
+        display:flex ;
+    }
+
+    .box3{
+        width: 620px;
+        height: 200px;
+        background-color:rgb(17, 116, 116);
+        margin: 30px 30px;
+        border-radius: 10px;
+        border: 1px solid #0000ff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        color: white;
+    }
+    
+    table{
+        width: 100%;
+        margin: 30px 30px;
+        border-radius: 10px;
+        border: 1px solid #0000ff
+    }
+
+    .hp{
+        display: flex;
+
+    }
+
+    .box4{
+        width: 450px;
+        height: 200px;
+        background-color:rgb(17, 116, 116);
+        margin: 30px 30px;
+        border-radius: 10px;
+        border: 1px solid #0000ff;
+      /*   display: flex; */
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        color: white;
+       
+    }
+
+    .box4 {
+    display: flex;
+    justify-content: space-between; /* text left, image right */
+    align-items: center; /* vertically center */
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    margin: 10px 0;
+}
+
+.box4 img {
+    max-width: 150px; /* image size control */
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .box4 {
+        flex-direction: column; /* mobile me neeche aa jayega */
+        text-align: center;
+    }
+    .box4 img {
+        margin-top: 10px;
+    }
+}
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="m.png" width="200px" style="padding-left: 10px;">
+            <p style="color: #0000ff;">------------------------</p>
+
+            <div class="pictures">
+                <div style="padding: 30px;cursor:pointer">
+                    <img src="dashboard.png" width="80px" style="padding-left: 55px;">
+                    <p style="padding-left: 40px;">Dashboard</p> 
+                </div>
+                
+                <div style="padding: 30px;cursor:pointer">
+                    <img src="order.png" width="80px" style="padding-left: 55px;">
+                    <p style="padding-left: 40px;">Orders</p>
+                </div>
+    
+                <div style="padding: 30px;cursor:pointer">
+                    <img src="products.png" width="80px" style="padding-left: 55px;">
+                    <p style="padding-left: 40px;">Products</p>
+                </div>
+        
+                <div style="padding: 30px;cursor:pointer">
+                    <img src="customer2.png" width="80px" style="padding-left: 55px;">
+                    <p style="padding-left: 40px;">Customers</p>
+                </div>
+                
+                <div style="padding: 30px;cursor:pointer">
+                    <img src="report.png" width="80px" style="padding-left: 55px;">
+                    <p style="padding-left: 40px;">Reports</p>
+                </div>
+                
+                <div style="padding: 30px;cursor:pointer">
+                    <img src="settings.png" width="80px" style="padding-left: 55px;">
+                    <p style="padding-left: 40px">Settings</p> <br>
+                </div>
+            </div>
+            <p style="color: #0000ff;">------------------------</p>
+        </div>
+       
+        <div class="main-content">
+            <hr style="border: 1px solid  #0000ff; width: 100%;">   
+
+            <div class="header">
+                <h1>Mehdi <span style="color: rgb(236, 253, 0);
+                    font-size: 60px;
+                    text-shadow: 5px 5px 10px rgb(9, 101, 124);
+                   ">P</span>hones</h1>
+
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <input type="text" placeholder="Search..." /> 
+                    <p style="width: auto;">🛒🔔</p>
+                    <img src="profile.png" width="90px">
+                </div>
+            </div>    
+
+            <hr style="border: 1px solid #0000ff; width: 100%;">
+                
+            <h2>Admin Dashboard</h2>
+            <p style="color: rgb(175, 175, 175);">Manage your store effectively</p>
+
+
+            <div class="button">
+                <button>Add Product</button>
+                <button>Generate Report</button>
+            </div>
+            
+
+            <div class="detail">
+                <div class="box2">
+                    <div>
+                        <p class="h3">Total Orders</p>
+                        <p style="font-size: 20px; color: white;">(1,245)</p>
+                    </div>
+                    <img src="receipt.png" width="90px">
+                </div>
+
+                <div class="box2">
+                    <div>
+                        <p class="h3">Total Revenue</p>
+                        <p style="font-size: 20px; color: white;">($58,000)</p>
+                    </div>
+                    <img src="revenue-growth.png" width="90px">
+                </div>
+
+                <div class="box2">
+                    <div>
+                        <p class="h3">New Customers</p>
+                        <p style="font-size: 20px; color: white;">(350)</p>
+                    </div>
+                    <img src="customer.png" width="90px">
+                </div>
+
+                <div class="box2">    
+                    <div>
+                        <p class="h3">Products in Stock</p>
+                        <p style="font-size: 20px; color: white;">(2,500)</p>
+                    </div>
+                    <img src="features (1).png" width="90px">
+                </div>
+            </div>
+
+            
+            <div class="dell">
+                <div class="box3">
+                    Placeholder for Sales Chart
+                </div>
+    
+                <div class="box3">
+                    Placeholder for Traffic Source Pie Chart
+                </div>
+            </div>
+
+
+            <div class="dee">
+                <table border="1" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                    <tr style="background-color: rgb(17, 116, 116); color: white;">
+                        <th style="padding: 10px;">Order ID</th>
+                        <th style="padding: 10px;">Customer</th>
+                        <th style="padding: 10px;">Product</th>
+                        <th style="padding: 10px;">Date</th>
+                    </tr>
+
+                    
+                    
+                    <tr  border="1" style="color: white; background-color: rgb(17, 116, 116);">
+                        <th style="padding: 10px;">#1234</th>
+                        <th style="padding: 10px;">Ali</th>
+                        <th style="padding: 10px;">Smartphone , Laptop , Camera</th>
+                        <th style="padding: 10px;">2025-08-08</th>
+
+                    </tr>
+                    
+                </table>
+            </div>
+
+            <div class="hp">
+                <div class="box4">
+                    <div class="text-part">
+                        <p>Smartphone</p>
+                        <p>Rs/15k</p>
+                        <p>Stock : 100</p>
+                    </div>
+                   <div class="img-part">
+                    <img src="smartphone.png" style="width: 180px; height: auto;">
+                   </div>
+                </div>
+
+
+                <div class="box4">
+                    <div class="text-part">
+                        <p>Laptop</p>
+                        <p>Rs/20k</p>
+                        <p>Stock : 50</p>
+                        </div>
+                        <div class="img-part">
+                            <img src="laptop.png" style="width: 180px; height: auto;">
+                        </div>
+                    </div>
+
+
+                    <div class="box4">
+                        <div class="text-part">
+                            <p>Camera</p>
+                            <p>Rs/45k</p>
+                            <p>Stock : 30</p>
+                        </div>
+                        <div class="image-part">
+                            <img src="camera.png" style="width: 180px; height: auto;">
+                        </div>
+                    </div>
+                </div>
+                
+            <p style="text-align: center;">Built with Tailwind CSS – Mehdiphones</p>
+
+               
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
